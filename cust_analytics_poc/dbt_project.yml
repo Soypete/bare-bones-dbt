@@ -1,0 +1,18 @@
+
+name: 'cust_analytics_poc'
+version: '1.0.0'
+config-version: 2
+
+profile: 'cust_analytics_poc'
+
+model-paths: ["models"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+models:
+  cust_analytics_poc:
+    # Config indicated by + and applies to all files under models/example/
+    examples:
+      +schema: test_public_data # in BQ dataet = dbt schema and project = dbt database
+
