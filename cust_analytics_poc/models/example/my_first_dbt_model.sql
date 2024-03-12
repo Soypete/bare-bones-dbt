@@ -18,8 +18,7 @@ GROUP BY state_name, institution_name, total_assets
 ORDER BY state_name, total_assets, institution_name
 )
 
-select *
-from bank_assets;
+select * from bank_assets;
 
 /*
     Uncomment the line below to remove records with null `id` values
